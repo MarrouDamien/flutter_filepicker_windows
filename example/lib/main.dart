@@ -1,8 +1,6 @@
-import 'package:flutter/material.dart';
-import 'dart:async';
-
-import 'package:flutter/services.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(new MyApp());
 
@@ -64,7 +62,8 @@ class _MyAppState extends State<MyApp> {
             ),
             Padding(
               padding: const EdgeInsets.only(top: 10.0),
-              child: new Text('FILE NAME ', style: new TextStyle(fontWeight: FontWeight.bold)),
+              child: new Text('FILE NAME ',
+                  style: new TextStyle(fontWeight: FontWeight.bold)),
             ),
             new Text(_fileName),
           ],
